@@ -1,0 +1,27 @@
+
+SMS SPAM CLASSIFICATION - MODEL RESULTS
+=======================================
+Model: Multinomial Naive Bayes
+Features: TF-IDF
+Training size: 4136
+Testing size: 1035
+
+Accuracy:  0.9643
+Precision: 1.0000
+Recall:    0.7176
+F1-score:  0.8356
+
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+         Ham       0.96      1.00      0.98       904
+        Spam       1.00      0.72      0.84       131
+
+    accuracy                           0.96      1035
+   macro avg       0.98      0.86      0.91      1035
+weighted avg       0.97      0.96      0.96      1035
+
+
+CONFUSION MATRIX
+[[904   0]
+ [ 37  94]]

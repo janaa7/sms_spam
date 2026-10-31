@@ -1,0 +1,36 @@
+K-MEANS CLUSTERING SUMMARY
+==========================
+
+Dataset: SMS Spam Collection
+Number of messages: 5171
+Method: TF-IDF + TruncatedSVD (50 dimensions) + Normalizer + K-Means
+Number of clusters (k): 2
+Reason for k: Initial experiment based on two known message classes.
+Silhouette Score (1000 sampled records): 0.0647
+
+CLUSTER SIZES
+cluster
+0     898
+1    4273
+
+CLUSTER VS KNOWN LABELS
+label     ham  spam
+cluster            
+0         328   570
+1        4190    83
+
+CLUSTER 0
+Top terms: num, to, call, free, your, or, now, txt, you, ur
+
+CLUSTER 1
+Top terms: you, to, the, in, me, and, it, my, is, that
+
+INTERPRETATION
+Cluster 0: Predominantly ham messages, with common conversational terms.
+Cluster 1: Spam-majority group, with promotional and action-oriented terms.
+
+QUALITY AND LIMITATIONS
+The low silhouette score suggests substantial geometric overlap.
+Clusters are unsupervised groups, not predicted class labels.
+Some top terms are stop words or preprocessing placeholders.
+k=2 is an initial choice; comparison with other k values is recommended.
